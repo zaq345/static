@@ -5,7 +5,6 @@ a{
 
 .top{
   text-align: center;
-  /* border: 1px solid black; */
   width: 513px;
   height: 101px; 
   margin: auto;
@@ -19,7 +18,7 @@ a{
 } 
 .line{
   text-align: center;
-  margin-bottom: 15gitgitpx;
+  margin-bottom: 15px;
 }   
 .string{
   display: inline;
@@ -48,9 +47,6 @@ a{
   margin: auto;
   width: 368px;
 }
-
-
-
 .pictures{
   text-align: center;
   width: 1187px;
@@ -59,4 +55,29 @@ a{
 } 
 .pic{
    margin: 5px;
+}
+.bkg4{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-left: 375px;
+}
+.bkg3{
+  position: relative;
+  width: 33px;
+  height: 24px;
+  float: left;
+}
+.bkg2{
+  position: relative;
+  width: 202px;
+  height: 98px;
+  float: right;
+}
+.bkg1{
+  position: relative;
+  width: 87px;
+  height: 87px;
+  float: left;
 }
