@@ -1,11 +1,4 @@
-.top{
-  
-  height: 101px;
-  width: 550px;
-  margin: auto;
-  
-}
-.header{
+.head{
   font-family: sans-serif;
   display: flex;
   justify-content: center;
@@ -38,7 +31,7 @@
   font-size: 14pt;
 }
 
-.bottom{
+.foto{
   display: flex;
   width: 1178px;
   height: 594px;
