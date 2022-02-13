@@ -1,103 +1,103 @@
 
 /* Самый верх Header */
-header{
+.header{
   margin-bottom: 75px;
 }
 /* фоны */
-.header-background{
+.background__header-bkg{
   position: absolute;
   z-index: -1;
   top:0px;
   left:0px;
 }
-.header-bkg1{
+.background__header-bkg1{
   position: absolute;
   z-index: -1;
   top:234px;
   left:732px;
 }
-.header-bkg2{
+.background__header-bkg2{
   position: absolute;
   z-index: -2;
   top:50px;
   left:708px;
 }
-.header-bkg3{
+.background__header-bkg3{
   position: absolute;
   z-index: -1;
   top:100px;
   left:1108px;
 }
-.header-bkg4{
+.background__header-bkg4{
   position: absolute;
   z-index: -1;
   top:475px;
   left:1px;
 }
-.header-bkg5{
+.background__header-bkg5{
   position: absolute;
   z-index: -1;
   top:515px;
   left:615px;
 }
-.header-bkg6{
+.background__header-bkg6{
   position: absolute;
   z-index: -1;
   top:435px;
   right: 0;
 }
 /* Лого, панель навигации и телефон*/
-.header-upper{
+.header__up{
   display: flex;
   justify-content: space-between;
   margin: 30px 75px;
 }
-nav{
+.nav{
   display: flex;
   width: 600px;
   height: 20px;
   justify-content: space-between;
 }
-nav>a{
+.nav__item{
   text-decoration: none;
   color: black;
   font-family: sans-serif;
 }
-.tel{
+.phone{
   display: flex;
   flex-direction: column;
 }
-.phone-number{
+.phone__number{
   text-decoration: none;
   color: black;
   font-weight: bold;
   font-family: sans-serif;
 }
-.phone-number-link{
+.phone__number-link{
   font-family: sans-serif;
   color: black;
 }
 /* Текст */
-.header-text{
+.header__text{
   display: flex;
   flex-direction: column;
   margin: 0 0 0 75px;
 }
-.header-text>p{
+.header__text>p{
   font-family: sans-serif;
   margin: 0;
   font-weight: bold;
 }
-.header-text>p:nth-child(1){
+.header__text>p:nth-child(1){
   font-size: 100px;
 }
-.header-text-img{
+.header__text-img{
   position: absolute;
   left: 325px;
   top: 180px;
 }
 /* Кнопка */
-.header-button{
+.header__button{
   margin-top: 77px;
   margin-left: 75px;
   width: 293px;
@@ -109,7 +109,7 @@ nav>a{
   flex-direction:row;
   background-color: #162223;
 }
-.header-button-pic{
+.header__button-pic{
   margin: auto;
   display: flex;
   width: 34px;
@@ -118,19 +118,19 @@ nav>a{
   border-radius: 50%;
   background-color: #D1D94D;
 }
-.header-button-pic>img{
+.header__button-pic>img{
   width: 14px;
   height: 14px;
   margin: auto;
 }
-.header-button>p{
+.header__button>p{
   margin: auto;
   color: white;
   font-family: sans-serif;
   font-weight: bold;
 }
 /* Ряд кружочков */
-.row-circles{
+.header__row-circles{
   width: 1156px;
   margin: auto;
   margin-top: 125px;
@@ -159,51 +159,51 @@ nav>a{
   justify-content: center;
 }
 /* фоны */
-.menu-bkg1{
+.menu__bkg1{
   position: absolute;
   right: 0;
   top: 900px;
 }
-.menu-bkg2{
+.menu__bkg2{
   position: absolute;
   right: 0;
   top: 2050px;
   z-index: -1;
 }
-.menu-bkg3{
+.menu__bkg3{
   position: absolute;
   left: 0;
   top: 2675px;
 }
-.menu-bkg4{
+.menu__bkg4{
   position: absolute;
   left: 100px;
   top: 2915px;
 }
 
 /* заголовок */
-.menu-head{
+.menu__header{
   font-family: sans-serif;
   display: flex;
   justify-content: center;
   /* flex-direction: column; */
 }
-.menu-line{
+.menu__line{
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.menu-string{
+.menu__string{
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.menu-string>div{
+.menu__string>div{
   font-family: sans-serif;
   font-size: 12pt;
 }
 /* программы меню*/
-.menu-main{
+.menu__programs{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -224,27 +224,27 @@ nav>a{
   flex-direction: column;
   
 }
-.program-name{
+.program__name{
   font-size: 24px;
   font-family: sans-serif;
   margin: 27px 32px 32px 23px;
 }
-.program-numberofmeals{
+.program__meals{
   margin-left: 27px;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
-.name{
+.program__number-of-meals{
   font-family: sans-serif;
   margin-bottom: 17px;
 }
-.meal-type{
+.program__meal-types{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.meal-type-1{
+.program__meal-type{
   width: 88px;
   height: 22px;
   display: flex;
@@ -252,18 +252,18 @@ nav>a{
   align-items: center;
   
 }
-.meal-type-1>p{
+.program__meal-type>p{
   font-size: 16px;
   font-family: sans-serif;
 }
-.meal-type-1>img{
+.program__meal-type>img{
   margin: 8px;
 }
-.program-menu>ul{
+.program__menu>ul{
   font-size: 14px;
   font-family: sans-serif;
 }
-.program-button{
+.program__button{
   margin-top: 32px;
   margin-left: 27px;
   font-family: sans-serif;
@@ -275,32 +275,32 @@ nav>a{
   text-align: center;
 }
 /* цитата */
-.quote-main{
+.menu__quote-main{
   margin-left: 156px;
   width: 690px;
 }
-.vector{
+.menu__vector{
   margin-left: 100px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.quote-author{
+.author{
   display: flex;
   margin-left: 196px;
   justify-content: space-between;
   width: 520px;
 }
-.about-author{
+.author__about{
   display: flex;
   flex-direction: column;
   width: 400px;
   justify-content: space-around;
 }
-.author-name{
+.author__name{
   font-size: 24px;
   font-family: sans-serif;
 }
-.author-status{
+.author__status{
   font-size: 13px;
   font-family: sans-serif;
 }
@@ -310,17 +310,17 @@ nav>a{
   margin-bottom: 100px;
 }
 /* заголовок в блоке инсты */
-.inst-head{
+.inst__header{
   font-family: sans-serif;
   display: flex;
   justify-content: center;
 }
-.inst-line{
+.inst__line{
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.inst-string{
+.inst__string{
   display: flex;
   justify-content: space-between;
   width: 570px;
@@ -328,35 +328,35 @@ nav>a{
   margin: auto;
   align-items: center;
 }
-.inst-url>a{
+.inst__url>a{
   font-family: sans-serif;
   text-decoration: none;
   color: black;
   font-size: 12pt;
   flex-basis: 125px;
 }
-.inst-tags{
+.inst__tags{
   display: flex;
   justify-content: space-between;
   flex-shrink: 10;
 }
-.inst-tag{
+.inst__tag{
   font-family: sans-serif;
   font-size: 12pt;
 }
 /* фото в блоке инсты */
-.inst-foto{
+.inst__foto{
   display: flex;
   width: 1178px;
   height: 594px;
   flex-wrap: wrap;
   margin: 40px auto;
 }
-.inst-img{
+.inst__img{
   margin: 5px;
 }
 /*  фоны  в блоке инсты*/
-.inst-bkg-top{
+.inst__bkg-top{
   /* position: absolute;   */
   display: flex;
   flex-direction: row;
@@ -365,16 +365,16 @@ nav>a{
   margin-left: 300px;
   justify-content: space-between;
 }
-.inst-bkg1{
+.inst__bkg1{
   margin-top: 40px;
 }
-.inst-bkg2{
+.inst__bkg2{
   margin-top: 85px;
 }
-.inst-bkg3{
+.inst__bkg3{
   position: absolute;
 }
-.inst-bkg4{
+.inst__bkg4{
   position: absolute;
   margin-left: 275px;
   z-index: 1;
@@ -390,37 +390,37 @@ footer{
   flex-direction: column;
 }
 /* То что повыше */
-.footer-upper{
+.footer__up{
   margin: auto;
   display: flex;
   justify-content: space-between;
   width: 1170px;
 }
-.footer-logo{
+.footer__logo{
   margin: auto;
   margin-left: 0;
 }
-.footer-middle{
+.footer__middle{
   display: flex;
   flex-direction: column;
   margin: auto;
 }
-.footer-middle>p{
+.footer__address{
   color: #ffffff;
   justify-content: space-between;
   margin: 10px 0;
 }
-.footer-phone-number{
+.footer__phone-number{
   text-decoration: none;
   color: white;
   font-weight: bold;
   font-family: sans-serif;
   margin: 10px 0;
 }
-.footer-mail{
+.footer__mail{
   color: #ffffff;
 }
-.footer-pic{
+.footer__pic{
   margin: auto;
   margin-right: 0;
   width: 200px;
@@ -429,13 +429,13 @@ footer{
   justify-content: space-between;
 }
 /* То что пониже */
-.footer-lower{
+.footer__down{
   width: 1170px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-.footer-lower>p{
+.footer__down>div{
   font-family: sans-serif;
   color: #ffffff;
 }

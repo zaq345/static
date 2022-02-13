@@ -3,95 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <title>Static site course</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/flexbox.css">
 </head>
 <body>
 
-  <header>
+  <header class="header">
 
-    <div class="header-bkg">
-      <div class="header-background">
-        <img src="./img/header/backgroung header.svg" alt="">
+    <div class="header__background">
+      
+      <div class="background">
+
+        <div class="background__header-bkg">
+          <img src="./img/header/backgroung-header.svg" alt="backgroung header">
+        </div>
+        <div class="background__header-bkg1">
+          <img src="./img/header/blur-tomato.png" alt="blur tomato">
+        </div>
+        <div class="background__header-bkg2">
+          <img src="./img/header/plate.png" alt="plate">
+        </div>
+        <div class="background__header-bkg3">
+          <img src="./img/header/blur-list.png" alt="blur list">
+        </div>
+        <div class="background__header-bkg4">
+          <img src="./img/header/list.png" alt="list">
+        </div>
+        <div class="background__header-bkg5">
+          <img src="./img/header/tomato.png" alt="tomato">
+        </div>
+        <div class="background__header-bkg6">
+          <img src="./img/header/pepper.png" alt="pepper">
+        </div>
+
       </div>
-      <div class="header-bkg1">
-        <img src="./img/header/blur tomato.png" alt="">
-      </div>
-      <div class="header-bkg2">
-        <img src="./img/header/plate.png" alt="">
-      </div>
-      <div class="header-bkg3">
-        <img src="./img/header/blur list.png" alt="">
-      </div>
-      <div class="header-bkg4">
-        <img src="./img/header/list.png" alt="">
-      </div>
-      <div class="header-bkg5">
-        <img src="./img/header/tomato.png" alt="">
-      </div>
-      <div class="header-bkg6">
-        <img src="./img/header/pepper.png" alt="">
-      </div>
+
     </div>
 
-    <div class="header-upper">
+    <div class="header__up">
 
       <div class="logo">
-        <img src="./img/header/logo gorod sad black.svg" alt="">
+        <img src="./img/header/logo-gorod-sad-black.svg" alt="logo gorod sad black">
       </div>
 
-      <nav>
-        <a href="#">Программы</a>
-        <a href="#">Доставка</a>
-        <a href="#">На чём основано меню?</a>
-        <a href="#">О компании</a>
+      <nav class="nav">
+
+        <a class="nav__item" href="#">Программы</a>
+        <a class="nav__item" href="#">Доставка</a>
+        <a class="nav__item" href="#">На чём основано меню?</a>
+        <a class="nav__item" href="#">О компании</a>
+
       </nav>
 
-      <div class="tel">
-        <a class="phone-number" href="tel:+74995214104">+7 (499) 521-41-04</a>
-        <a class="phone-number-link"href="#">Обратный звонок</a>
+      <div class="phone">
+
+        <a class="phone__number" href="tel:+74995214104">+7 (499) 521-41-04</a>
+        <a class="phone__number-link" href="#">Обратный звонок</a>
+
       </div>
 
     </div>
 
-    <div class="header-text">
+    <div class="header__text">
       <p>FIT <br>YOUR <br>MACROS*</p>
-      <img class="header-text-img"src="./img/header/flexible diet.svg" alt="">
+      <img class="header__text-img" src="./img/header/flexible-diet.svg" alt="flexible diet">
       <p>Ваш здоровый рацион питания на каждый день</p>
     </div>
 
-    <div class="header-button">
+    <div class="header__button">
 
-        <div class="header-button-pic">
-          <img src="./img/header/calendar 1.svg" alt="">
+        <div class="header__button-pic">
+          <img src="./img/header/calendar.svg" alt="calendar">
         </div>
 
         <p>Подобрать программу</p>
 
     </div>
 
-    <div class="row-circles">
+    <div class="header__row-circles">
       <div class="circle">
-        <img src="./img/header/circle 1.svg" alt="">
+        <img src="./img/header/circle1.svg" alt="circle1">
         <p>Разнообразное меню</p>
       </div>
 
       <div class="circle">
-        <img src="./img/header/circle 2.svg" alt="">
+        <img src="./img/header/circle2.svg" alt="circle2">
         <p>Много овощей и фруктов</p>
       </div>
 
       <div class="circle">
-        <img src="./img/header/circle 3.svg" alt="">
+        <img src="./img/header/circle3.svg" alt="circle3">
         <p>Минимум соли, без сахара</p>
       </div>
 
       <div class="circle">
-        <img src="./img/header/circle 4.svg" alt="">
+        <img src="./img/header/circle4.svg" alt="circle4">
         <p>Полезные способы приготовления</p>
       </div>
 
       <div class="circle">
-        <img src="./img/header/circle 5.svg" alt="">
+        <img src="./img/header/circle5.svg" alt="circle5">
         <p>Разнообразное меню</p>
       </div>
     </div>
@@ -100,79 +111,79 @@
 
   <main>
     
-    <div class="menu-backgrounds">
-
-      <div class="menu-bkg1">
-        <img src="./img/menu/pepper in programs.png" alt="">
-      </div>
-
-      <div class="menu-bkg2">
-        <img src="/img/menu/right component.png" alt="">
-      </div>
-
-      <div class="menu-bkg3">
-        <img src="./img/menu/cucumber programs.png" alt="">
-      </div>
-
-      <div class="menu-bkg4">
-        <img src="./img/menu/quotation marks.svg" alt="">
-      </div>
-
-    </div>
-    
     <article class="menu">
 
-      <section class="menu-header">
+      <div class="menu__backgrounds">
 
-        <div class="menu-head">
+      <div class="menu__bkg1">
+        <img src="./img/menu/pepper-programs.png" alt="pepper-programs">
+      </div>
+
+      <div class="menu__bkg2">
+        <img src="/img/menu/right-component.png" alt="right component">
+      </div>
+
+      <div class="menu__bkg3">
+        <img src="./img/menu/cucumber-programs.png" alt="cucumber programs">
+      </div>
+
+      <div class="menu__bkg4">
+        <img src="./img/menu/quotation-marks.svg" alt="quotation marks">
+      </div>
+
+      </div>
+
+      <section class="menu__head">
+
+        <div class="menu__header">
           <h2>Программы</h2>
         </div>
     
-        <div class="menu-line">
-          <img src="./img/inst/Vector 11.svg" alt="line">
+        <div class="menu__line">
+          <img src="./img/menu/vector-small.svg" alt="line">
         </div>
 
-        <div class="menu-string">
+        <div class="menu__string">
           <div>уникальные подарки внутри от партнеров</div>
         </div>
     
       </section>
 
-      <section class="menu-main">
+      <section class="menu__programs">
 
         <div class="program">
 
-          <div class="program-pic">
-            <img src="./img/menu/Mask Group.png" alt="">
+          <div class="program__pic">
+            <img src="./img/menu/Mask-Group.png" alt="Mask Group">
           </div>
 
-          <div class="program-name">Healthy&Tasty</div>
+          <div class="program__name">Healthy&Tasty</div>
 
-          <div class="program-numberofmeals">
+          <div class="program__meals">
 
-            <div class="name">
+            <div class="program__number-of-meals">
               4 приёма
             </div>
             
-            <div class="meal-type">
+            <div class="program__meal-types">
 
-              <div class="meal-type-1">
-                <img src="/img/menu/breakfast.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/breakfast.svg" alt="breakfast">
                 <p>Завтрак</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/snack.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/snack.svg" alt="snack">
                 <p>Перекус</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/lunch.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/lunch.svg" alt="lunch">
                 <p>Обед</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/dinner.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/dinner.svg" alt="dinner">
                 <p>Ужин</p>
               </div>
 
@@ -180,7 +191,7 @@
 
           </div>
 
-          <div class="program-menu">
+          <div class="program__menu">
             <ul>
               <li>Панкейки гречневые постные с соусом</li>
               <li>Крем-суп из шпината</li>
@@ -189,7 +200,7 @@
             </ul>
           </div>
 
-          <div class="program-button">
+          <div class="program__button">
             <p>ЗАКАЗАТЬ ПРОГРАММУ</p>     
           </div>
 
@@ -197,37 +208,37 @@
 
         <div class="program">
 
-          <div class="program-pic">
-            <img src="./img/menu/Mask Group.png" alt="">
+          <div class="program__pic">
+            <img src="./img/menu/Mask-Group.png" alt="Mask Group">
           </div>
 
-          <div class="program-name">Healthy&Tasty</div>
+          <div class="program__name">Healthy&Tasty</div>
 
-          <div class="program-numberofmeals">
+          <div class="program__meals">
 
-            <div class="name">
+            <div class="program__number-of-meals">
               4 приёма
             </div>
             
-            <div class="meal-type">
+            <div class="program__meal-types">
 
-              <div class="meal-type-1">
-                <img src="/img/menu/breakfast.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/breakfast.svg" alt="breakfast">
                 <p>Завтрак</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/snack.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/snack.svg" alt="snack">
                 <p>Перекус</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/lunch.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/lunch.svg" alt="lunch">
                 <p>Обед</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/dinner.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/dinner.svg" alt="dinner">
                 <p>Ужин</p>
               </div>
 
@@ -235,7 +246,7 @@
 
           </div>
 
-          <div class="program-menu">
+          <div class="program__menu">
             <ul>
               <li>Панкейки гречневые постные с соусом</li>
               <li>Крем-суп из шпината</li>
@@ -244,7 +255,7 @@
             </ul>
           </div>
 
-          <div class="program-button">
+          <div class="program__button">
             <p>ЗАКАЗАТЬ ПРОГРАММУ</p>     
           </div>
 
@@ -252,37 +263,37 @@
 
         <div class="program">
 
-          <div class="program-pic">
-            <img src="./img/menu/Mask Group.png" alt="">
+          <div class="program__pic">
+            <img src="./img/menu/Mask-Group.png" alt="Mask Group">
           </div>
 
-          <div class="program-name">Healthy&Tasty</div>
+          <div class="program__name">Healthy&Tasty</div>
 
-          <div class="program-numberofmeals">
+          <div class="program__meals">
 
-            <div class="name">
+            <div class="program__number-of-meals">
               4 приёма
             </div>
             
-            <div class="meal-type">
+            <div class="program__meal-types">
 
-              <div class="meal-type-1">
-                <img src="/img/menu/breakfast.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/breakfast.svg" alt="breakfast">
                 <p>Завтрак</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/snack.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/snack.svg" alt="snack">
                 <p>Перекус</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/lunch.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/lunch.svg" alt="lunch">
                 <p>Обед</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/dinner.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/dinner.svg" alt="dinner">
                 <p>Ужин</p>
               </div>
 
@@ -290,7 +301,7 @@
 
           </div>
 
-          <div class="program-menu">
+          <div class="program__menu">
             <ul>
               <li>Панкейки гречневые постные с соусом</li>
               <li>Крем-суп из шпината</li>
@@ -299,45 +310,45 @@
             </ul>
           </div>
 
-          <div class="program-button">
+          <div class="program__button">
             <p>ЗАКАЗАТЬ ПРОГРАММУ</p>     
           </div>
 
         </div>
-        
+
         <div class="program">
 
-          <div class="program-pic">
-            <img src="./img/menu/Mask Group.png" alt="">
+          <div class="program__pic">
+            <img src="./img/menu/Mask-Group.png" alt="Mask Group">
           </div>
 
-          <div class="program-name">Healthy&Tasty</div>
+          <div class="program__name">Healthy&Tasty</div>
 
-          <div class="program-numberofmeals">
+          <div class="program__meals">
 
-            <div class="name">
+            <div class="program__number-of-meals">
               4 приёма
             </div>
             
-            <div class="meal-type">
+            <div class="program__meal-types">
 
-              <div class="meal-type-1">
-                <img src="/img/menu/breakfast.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/breakfast.svg" alt="breakfast">
                 <p>Завтрак</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/snack.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/snack.svg" alt="snack">
                 <p>Перекус</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/lunch.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/lunch.svg" alt="lunch">
                 <p>Обед</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/dinner.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/dinner.svg" alt="dinner">
                 <p>Ужин</p>
               </div>
 
@@ -345,7 +356,7 @@
 
           </div>
 
-          <div class="program-menu">
+          <div class="program__menu">
             <ul>
               <li>Панкейки гречневые постные с соусом</li>
               <li>Крем-суп из шпината</li>
@@ -354,45 +365,45 @@
             </ul>
           </div>
 
-          <div class="program-button">
+          <div class="program__button">
             <p>ЗАКАЗАТЬ ПРОГРАММУ</p>     
           </div>
 
         </div>
-        
+
         <div class="program">
 
-          <div class="program-pic">
-            <img src="./img/menu/Mask Group.png" alt="">
+          <div class="program__pic">
+            <img src="./img/menu/Mask-Group.png" alt="Mask Group">
           </div>
 
-          <div class="program-name">Healthy&Tasty</div>
+          <div class="program__name">Healthy&Tasty</div>
 
-          <div class="program-numberofmeals">
+          <div class="program__meals">
 
-            <div class="name">
+            <div class="program__number-of-meals">
               4 приёма
             </div>
             
-            <div class="meal-type">
+            <div class="program__meal-types">
 
-              <div class="meal-type-1">
-                <img src="/img/menu/breakfast.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/breakfast.svg" alt="breakfast">
                 <p>Завтрак</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/snack.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/snack.svg" alt="snack">
                 <p>Перекус</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/lunch.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/lunch.svg" alt="lunch">
                 <p>Обед</p>
               </div>
 
-              <div class="meal-type-1">
-                <img src="/img/menu/dinner.svg" alt="">
+              <div class="program__meal-type">
+                <img src="/img/menu/dinner.svg" alt="dinner">
                 <p>Ужин</p>
               </div>
 
@@ -400,7 +411,7 @@
 
           </div>
 
-          <div class="program-menu">
+          <div class="program__menu">
             <ul>
               <li>Панкейки гречневые постные с соусом</li>
               <li>Крем-суп из шпината</li>
@@ -409,7 +420,7 @@
             </ul>
           </div>
 
-          <div class="program-button">
+          <div class="program__button">
             <p>ЗАКАЗАТЬ ПРОГРАММУ</p>     
           </div>
 
@@ -417,13 +428,13 @@
 
       </section>
 
-      <section class="quote">
+      <section class="menu__quote">
 
-        <div class="vector">
-          <img src="./img/menu/vector programs.svg" alt="">
+        <div class="menu__vector">
+          <img src="./img/menu/vector-programs.svg" alt="vector programs">
         </div>
 
-        <div class="quote-main">
+        <div class="menu__quote-main">
           <blockquote>
             Богатый гастрономический опыт в сфере ЗОЖ позволяет 
             команде «Город-Сад» быть бесспорным лидером в области 
@@ -438,123 +449,128 @@
           </blockquote>
         </div>
 
-        <div class="quote-author">
+        <div class="menu__quote-author">
 
-          <div class="author-foto">
-            <img src="./img/menu/author.png" alt="">
-          </div>
+          <div class="author">
 
-          <div class="about-author">
-
-            <div class="author-name">
-              Олеся Терещенко
+            <div class="author__foto">
+              <img src="./img/menu/author.png" alt="author">
             </div>
 
-            <div class="author-status">
-              сертифицированный health-коуч, партнер и основатель 
-              проекта Лекторий «Город-Сад», мама четверых детей
+            <div class="author__about">
+
+              <div class="author__name">
+                Олеся Терещенко
+              </div>
+
+              <div class="author__status">
+                сертифицированный health-коуч, партнер и основатель 
+                проекта Лекторий «Город-Сад», мама четверых детей
+              </div>
+
             </div>
 
           </div>
 
         </div>
 
-        <div class="vector">
-          <img src="./img/menu/vector programs.svg" alt="">
+        <div class="menu__vector">
+          <img src="./img/menu/vector-programs.svg" alt="vector programs">
         </div>
 
       </section>
 
     </article>
 
-  <article class="inst">
+    <article class="inst">
 
-    <div class="inst-bkg-top">
+      <div class="inst__bkg-top">
 
-      <div class="inst-bkg1">
-        <img src="./img/inst/inst upper.png" alt="">  
-      </div>
-  
-      <div class="inst-bkg2">
-        <img src="./img/inst/inst right.png" alt="">
-      </div>
-  
-    </div>
-  
-    <section class="inst-header">
-  
-      <div class="inst-head">
-        <h2>Инстаграм</h2>
-      </div>
-  
-      <div class="inst-line">
-        <img src="./img/inst/Vector 11.svg" alt="line">
-      </div>
-  
-      <div class="inst-string">
-  
-        <div class="inst-url">
-          <a href="http://gorod-sad.com">@gorod-sad.com</a>
+        <div class="inst__bkg1">
+          <img src="./img/inst/inst-upper.png" alt="inst upper">  
         </div>
-  
-        <div class="inst-tags">
-          <div class="inst-tag">#правильноепитание</div>
-          <div class="inst-tag">&ensp;-&ensp;</div>
-          <div class="inst-tag">#снижениевеса</div>
-          <div class="inst-tag">&ensp;-&ensp;</div>
-          <div class="inst-tag">#спортпит</div>
+    
+        <div class="inst__bkg2">
+          <img src="./img/inst/inst-right.png" alt="inst right">
         </div>
-  
+    
       </div>
-  
-    </section>
-  
-    <div class="inst-bkg3">
-      <img src="./img/inst/inst left.png" alt="">      
-    </div>
-  
-    <section class="inst-foto">
-      <img class="inst-img" src="./img/inst/img1.png" alt="pic1">
-      <img class="inst-img" src="./img/inst/img2.png" alt="pic2">
-      <img class="inst-img" src="./img/inst/img3.png" alt="pic3">
-      <img class="inst-img" src="./img/inst/img4.png" alt="pic4">
-      <img class="inst-img" src="./img/inst/img5.png" alt="pic5">
-      <img class="inst-img" src="./img/inst/img1.png" alt="pic6">
-      <img class="inst-img" src="./img/inst/img2.png" alt="pic7">
-      <img class="inst-img" src="./img/inst/img3.png" alt="pic8">
-    </section>
-  
-    <div class="inst-bkg4">
-      <img src="./img/inst/inst lower.png" alt="">
-    </div>
-  </article>
+    
+      <section class="inst__head">
+    
+        <div class="inst__header">
+          <h2>Инстаграм</h2>
+        </div>
+    
+        <div class="inst__line">
+          <img src="./img/inst/vector.svg" alt="line">
+        </div>
+    
+        <div class="inst__string">
+    
+          <div class="inst__url">
+            <a href="http://gorod-sad.com">@gorod-sad.com</a>
+          </div>
+    
+          <div class="inst__tags">
+            <div class="inst__tag">#правильноепитание</div>
+            <div class="inst__tag">&ensp;-&ensp;</div>
+            <div class="inst__tag">#снижениевеса</div>
+            <div class="inst__tag">&ensp;-&ensp;</div>
+            <div class="inst__tag">#спортпит</div>
+          </div>
+    
+        </div>
+    
+      </section>
+    
+      <div class="inst__bkg3">
+        <img src="./img/inst/inst-left.png" alt="inst left">      
+      </div>
+    
+      <section class="inst__foto">
+        <img class="inst__img" src="./img/inst/img1.png" alt="pic1">
+        <img class="inst__img" src="./img/inst/img2.png" alt="pic2">
+        <img class="inst__img" src="./img/inst/img3.png" alt="pic3">
+        <img class="inst__img" src="./img/inst/img4.png" alt="pic4">
+        <img class="inst__img" src="./img/inst/img5.png" alt="pic5">
+        <img class="inst__img" src="./img/inst/img1.png" alt="pic6">
+        <img class="inst__img" src="./img/inst/img2.png" alt="pic7">
+        <img class="inst__img" src="./img/inst/img3.png" alt="pic8">
+      </section>
+    
+      <div class="inst__bkg4">
+        <img src="./img/inst/inst-lower.png" alt="inst lower">
+      </div>
+
+    </article>
 
   </main>
 
-  <footer>
+  <footer class="footer">
 
-    <div class="footer-upper">
+    <div class="footer__up">
 
-      <img class="footer-logo" src="./img/footer/logo gorod sad green.svg" alt="">
+      <img class="footer__logo" src="./img/footer/logo-gorod-sad-green.svg" alt="logo gorod sad green">
 
-      <div class="footer-middle">
-        <a class="footer-phone-number" href="tel:+74995214104">+7 (499) 521-41-04</a>
-        <p>г. Москва, Семеновская наб. 2/1с1, офис 1003</p>
-        <a class="footer-mail"href="mailto:info@gorodsad.ru">info@gorodsad.ru</a>
+      <div class="footer__middle">
+        <a class="footer__phone-number" href="tel:+74995214104">+7 (499) 521-41-04</a>
+        <p class="footer__address">г. Москва, Семеновская наб. 2/1с1, офис 1003</p>
+        <a class="footer__mail" href="mailto:info@gorodsad.ru">info@gorodsad.ru</a>
       </div>
 
-      <div class="footer-pic">
-        <a href="http://facebook.com"><img src="./img/footer/Fb.svg" alt=""></a>
-        <a href="http://vk.com"><img src="./img/footer/vk.svg" alt=""></a>
-        <a href="http://instagram.com"><img src="./img/footer/inst.svg" alt=""></a>
-        <a href="http://youtube.com"><img src="./img/footer/Ytb.svg" alt=""></a>
+      <div class="footer__pic">
+        <a href="http://facebook.com"><img src="./img/footer/Fb.svg" alt="fb"></a>
+        <a href="http://vk.com"><img src="./img/footer/vk.svg" alt="vk"></a>
+        <a href="http://instagram.com"><img src="./img/footer/inst.svg" alt="inst"></a>
+        <a href="http://youtube.com"><img src="./img/footer/Ytb.svg" alt="ytb"></a>
       </div>
 
     </div>
 
-    <div class="footer-lower">
-      <p>2020 @ООО "Город-Сад"</p>
-      <p>Разработка сайта — <strong>WEBPROFY</strong></p>
+    <div class="footer__down">
+      <div class="footer__company">2020 @ООО "Город-Сад"</div>
+      <div class="footer__developer">Разработка сайта — <strong>WEBPROFY</strong></div>
     </div>
 
   </footer>
