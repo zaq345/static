@@ -180,7 +180,6 @@
   left: 100px;
   top: 2915px;
 }
-
 /* заголовок */
 .menu__header{
   font-family: sans-serif;
@@ -207,11 +206,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* justify-content: flex-start; */
   align-content: flex-start;
   margin: auto;
   margin-bottom: 90px;
-  width: 1230px;
+  width: 1175px;
   height: 1587px;
 }
 .program{
@@ -304,7 +302,6 @@
   font-size: 13px;
   font-family: sans-serif;
 }
-
 /* Блок инсты и фоток */
 .inst{
   margin-bottom: 100px;
@@ -379,6 +376,206 @@
   margin-left: 275px;
   z-index: 1;
 }
+/* Форма отправки данных */
+.form{
+  left: 0;
+  width: 100%; 
+  height: 844px;
+  background-color: #282828;
+}
+/* фоны */
+.form__bkg1{
+  position: absolute;
+  top: 4275px;
+}
+.form__bkg2{
+  position: absolute;
+  top: 4575px;
+}
+.form__bkg3{
+  position: absolute;
+  top: 4900px;
+  right: 0;
+}
+/* Заголовок и лого */
+.form__head{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form__logo{
+  margin-top: 72px;
+}
+.form__header{
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  color: #ffffff;
+}
+/* Сама форма */
+.form__block{
+  width: 928px;
+  height: 537px;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+
+  /* align-content: space-between; */
+
+  color: #ffffff;
+  font-family: sans-serif;
+}
+/* Левая часть формы */
+.left-part{
+  display: flex;
+  flex-direction: column;
+  width: 434px;
+}
+.left-part__name{
+  height: 43px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  background-color: #282828;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+}
+.left-part__email{
+  height: 43px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  background-color: #282828;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+}
+.left-part__time-selection{
+  height: 43px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  background-color: #282828;
+  color: #757575;
+  border: 2px solid #282828;
+  border-bottom: 2px solid #ffffff;
+}
+/* Радио кнопка  */
+.radio-button-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.left-part__radio {
+	margin-bottom: 10px;
+}
+.left-part__radio input[type=radio] {
+	display: none;
+}
+.left-part__radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+  font-size: 14px;
+}
+.left-part__radio label:before {
+	content: "";
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../img/radiobutton/off.svg) 0 0 no-repeat;
+}
+/* Checked */
+.left-part__radio input[type=radio]:checked + label:before {
+	background: url(../img/radiobutton/on.svg) 0 0 no-repeat;
+}
+/*  */
+/* чекбокс*/
+.checkbox-label {
+	display: block;
+	margin: 0 0 60px 0;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+.checkbox-label input[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-label span {
+	display: inline-block;
+	position: relative; 
+	padding: 0 0 0 35px; 
+	line-height: 22px;  
+  font-size: 14px;  
+}
+.checkbox-label span:before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: background 0.3s ease;
+	background: url(../img/checkbox/off.svg) 0 0 no-repeat;
+}
+/* Checked */
+.checkbox-label input[type=checkbox]:checked + span:before {
+	background-image: url(../img/checkbox/on.svg);
+}
+/*  */
+.left-part__submit-button>button{
+  width: 200px;
+  height: 52px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  border-radius: 26px;
+  background-color: #282828;
+  /* margin-bottom: 0; */
+}
+/* Правая часть формы */
+.right-part{
+  
+  display: flex;
+  flex-direction: column;
+}
+.right-part__family{
+  height: 43px;
+  margin-top: 0;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  background-color: #282828;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+}
+.right-part__tel{
+  height: 43px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  background-color: #282828;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+}
+.right-part__comment{
+  margin-left: 60px;
+  width: 434px;
+  height: 147px;
+  background-color: #282828;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+}
+
 /* Самый низ footer */
 footer{
   position: absolute;
