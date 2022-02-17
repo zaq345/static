@@ -581,9 +581,21 @@
 
           <div class="left-part">
 
-            <input type="text" name="name" id="name" class="left-part__name" placeholder="Имя">
+            <input type="text" 
+            name="name" 
+            id="name" 
+            class="left-part__name" 
+            placeholder="Имя"
+            minlength="2"
+            >
 
-            <input type="email" name="email" id="email" class="left-part__email" placeholder="E-mail*">
+            <input type="email" 
+            name="email" 
+            id="email" 
+            class="left-part__email" 
+            placeholder="E-mail*"
+            required
+            >
 
             <select name="time-selection" id="time-selection" class="left-part__time-selection">
               <option selected disabled hidden>Выбрать время для звонка</option>
@@ -621,9 +633,21 @@
 
           <div class="right-part">
 
-            <input type="text" name="family" id="family" class="right-part__family" placeholder="Фамилия">
+            <input type="text" 
+            name="family" 
+            id="family" 
+            class="right-part__family" 
+            placeholder="Фамилия"
+            minlength="2"
+            >
 
-            <input type="tel" name="tel" id="tel" class="right-part__tel" placeholder="Телефон">
+            <input type="tel" 
+            name="tel" 
+            id="tel" 
+            class="right-part__tel" 
+            placeholder="Телефон(+71234567890)"
+            pattern="+[0-9]{11}"
+            >
             
             <textarea name="comment" id="comment" class="right-part__comment" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
           
