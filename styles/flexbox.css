@@ -135,7 +135,7 @@
   margin-left: 0;
 }
 /* Ряд кружочков */
-.header__row-circles{
+/* .row-circles{
   width: 1156px;
   margin: auto;
   margin-top: 125px;
@@ -157,9 +157,57 @@
 .circle>img{
   height: 120px;
   width: 120px;
+} */
+.circles{
+  margin-top: 100px;
 }
+.circle-box{
+  padding: auto 25px;
+  height: 173px;
+  width: 204px;
+  align-items: center;
+}
+.circle{
+  display: flex;
+  width: 120px;
+  height: 120px;
+  background-color: #BFE142;
+  border-radius: 60px;
+  /* margin-top: 25px; */
+  /* align-content: center; */
+  justify-content: center;
+}
+.circle>img{
+  margin-top: 25px;
+  width: 70px;
+  height: 70px;
+}
+/* скопированный код для кружочков */
+.bz-content {
+  display: flex;
+  justify-content: center;
+
+  box-sizing: content-box;
+}
+.bz-content *,
+.bz-content *::before,
+.bz-content *::after {
+  box-sizing: inherit;
+}
+.bz-border {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.bz-border *,
+.bz-border *::before,
+.bz-border *::after {
+  box-sizing: inherit;
+}
+/*  */
 /* Меню/Программы и цитата */
 .menu{
+  margin-top: 75px;
   margin-bottom: 50px;
   justify-content: center;
 }
