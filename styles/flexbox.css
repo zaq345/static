@@ -159,7 +159,7 @@
   width: 120px;
 } */
 .circles{
-  margin-top: 100px;
+  margin-top: 125px;
 }
 .circle-box{
   padding: auto 25px;
@@ -182,6 +182,62 @@
   width: 70px;
   height: 70px;
 }
+.circle>div{
+  margin-top: 25px;
+}
+circle>p{
+  font-family: 'circles-row';
+}
+/*  */
+@font-face {
+  font-family: 'circles-row';
+  src: url(../fonts/circles-row.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "circles-row";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-3:before { content: '\e800'; } /* '' */
+.icon-4:before { content: '\e801'; } /* '' */
+.icon-5:before { content: '\e802'; } /* '' */
+.icon-1:before { content: '\e803'; } /* '' */
+.icon-2:before { content: '\e804'; } /* '' */
+
+/*  */
 /* скопированный код для кружочков */
 .bz-content {
   display: flex;
@@ -194,16 +250,7 @@
 .bz-content *::after {
   box-sizing: inherit;
 }
-.bz-border {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
-.bz-border *,
-.bz-border *::before,
-.bz-border *::after {
-  box-sizing: inherit;
-}
+
 /*  */
 /* Меню/Программы и цитата */
 .menu{
