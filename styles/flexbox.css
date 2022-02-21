@@ -66,6 +66,10 @@
   text-decoration: none;
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.25s linear;
+}
+.nav__item:hover{
+  color:#FF8C00;
 }
 .phone{
   display: flex;
@@ -76,6 +80,10 @@
   color: black;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.25s linear;
+}
+.phone__number:hover{
+  color:#FF8C00;
 }
 .phone__number-link{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,7 +143,7 @@
   margin-left: 0;
 }
 /* Ряд кружочков */
-/* .row-circles{
+.row-circles{
   width: 1156px;
   margin: auto;
   margin-top: 125px;
@@ -157,101 +165,8 @@
 .circle>img{
   height: 120px;
   width: 120px;
-} */
-.circles{
-  margin-top: 125px;
-}
-.circle-box{
-  padding: auto 25px;
-  height: 173px;
-  width: 204px;
-  align-items: center;
-}
-.circle{
-  display: flex;
-  width: 120px;
-  height: 120px;
-  background-color: #BFE142;
-  border-radius: 60px;
-  /* margin-top: 25px; */
-  /* align-content: center; */
-  justify-content: center;
-}
-.circle>img{
-  margin-top: 25px;
-  width: 70px;
-  height: 70px;
-}
-.circle>div{
-  margin-top: 25px;
-}
-circle>p{
-  font-family: 'circles-row';
-}
-/*  */
-@font-face {
-  font-family: 'circles-row';
-  src: url(../fonts/circles-row.ttf);
-  font-weight: normal;
-  font-style: normal;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "circles-row";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 70px;
-
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-3:before { content: '\e800'; } /* '' */
-.icon-4:before { content: '\e801'; } /* '' */
-.icon-5:before { content: '\e802'; } /* '' */
-.icon-1:before { content: '\e803'; } /* '' */
-.icon-2:before { content: '\e804'; } /* '' */
-
-/*  */
-/* скопированный код для кружочков */
-.bz-content {
-  display: flex;
-  justify-content: center;
-
-  box-sizing: content-box;
-}
-.bz-content *,
-.bz-content *::before,
-.bz-content *::after {
-  box-sizing: inherit;
-}
-
-/*  */
 /* Меню/Программы и цитата */
 .menu{
   margin-top: 75px;
