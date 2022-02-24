@@ -3,6 +3,14 @@
   font-family: SegoeUI; 
   src: url(../fonts/segoe-ui/SegoeUI.ttf); 
  }
+ /* Вращение фоновых элементов при наведении */
+.bkg-anim{
+  transition: 1s;
+}
+.bkg-anim:hover{
+  transform: rotate(2deg) scale(1.025); 
+}
+ /*  */
 /* Самый верх Header */
 .header{
   margin-bottom: 75px;
@@ -15,38 +23,32 @@
   left:0px;
 }
 .background__header-bkg1{
-  position: absolute;
-  z-index: -1;
+  position:absolute;
   top:234px;
   left:732px;
 }
 .background__header-bkg2{
   position: absolute;
-  z-index: -2;
   top:50px;
   left:708px;
 }
 .background__header-bkg3{
   position: absolute;
-  z-index: -1;
   top:100px;
   left:1108px;
 }
 .background__header-bkg4{
   position: absolute;
-  z-index: -1;
   top:475px;
   left:1px;
 }
 .background__header-bkg5{
   position: absolute;
-  z-index: -1;
   top:515px;
   left:615px;
 }
 .background__header-bkg6{
   position: absolute;
-  z-index: -1;
   top:435px;
   right: 0;
 }
@@ -227,27 +229,22 @@
 }
 /*  */
 .circle-flip1 {  
-  animation-fill-mode:forwards;
   animation: rotation 15s infinite;
   animation-delay: 8s;
 }
 .circle-flip2 {
-  animation-fill-mode:forwards;
   animation: rotation 15s infinite;
   animation-delay: 11s;
 }
 .circle-flip3 {
-  animation-fill-mode:forwards;
   animation: rotation 15s infinite;
   animation-delay: 14s;
 }
 .circle-flip4 {
-  animation-fill-mode:forwards;
   animation: rotation 15s infinite;
   animation-delay: 17s;
 }
 .circle-flip5 {
-  animation-fill-mode:forwards;
   animation: rotation 15s infinite;
   animation-delay: 20s;
 }
@@ -277,7 +274,6 @@
   position: absolute;
   right: 0;
   top: 2050px;
-  z-index: -1;
 }
 .menu__bkg3{
   position: absolute;
