@@ -76,6 +76,7 @@
 	line-height: 1; /*задаём высоту строки*/
 	text-decoration: none; /*убираем подчёркивание*/
 }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
 .nav__item:hover{
   color:#FF8C00; /*цвет ссылки*/
 }
@@ -89,6 +90,7 @@
 	content: "";
 	transition: width 0.3s ease-out; 
 }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
 .nav__item:hover:after,
 .nav__item:focus:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
@@ -104,6 +106,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: 0.25s linear;
 }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
 .phone__number:hover{
   color:#FF8C00;
 }
@@ -122,6 +125,7 @@
   margin: 0;
   font-weight: bold;
 }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
 .header__text>p:nth-child(1){
   font-size: 100px;
 }
@@ -173,6 +177,7 @@
   justify-content: space-between;
   flex-direction: row;
 }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
 .circle:nth-child(1) {
   opacity: 0;
   animation-fill-mode:forwards;
@@ -581,6 +586,7 @@
 	user-select: none;
   font-size: 14px;
 }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
 .left-part__radio label:before {
 	content: "";
 	display: inline-block;
@@ -619,6 +625,7 @@
 	line-height: 22px;  
   font-size: 14px;  
 }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
 .checkbox-label span:before {
 	content: "";
 	display: inline-block;
