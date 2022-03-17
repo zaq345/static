@@ -25,7 +25,7 @@
 }
 .content{
   border: 1px solid black;
-  text-align: center;
+  /* text-align: center; */
   min-width: 10rem;
   min-height: 2rem;
   flex-grow: 3 !important; 
