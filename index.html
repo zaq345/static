@@ -89,17 +89,84 @@
         <nav>
           <ul class="pagination justify-content-center">
             <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Предыдущая</a>
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&laquo;</a>
             </li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">
-              <a class="page-link" href="#">Следующая</a>
+              <a class="page-link" href="#">&raquo;</a>
             </li>
           </ul>
         </nav>
 
+        <!--  -->
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-12">Форма обратной связи</div>
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Иван" required>
+            <div class="valid-feedback">
+              Все хорошо!
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Фамилия</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Петров" required>
+            <div class="valid-feedback">
+              Все хорошо!
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustomUsername" class="form-label">Имя пользователя</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Пожалуйста, выберите имя пользователя.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">Город</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Укажите действующий город.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Область</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Выберите...</option>
+              <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+              Пожалуйста, выберите корректный город.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom05" class="form-label">Индекс</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Пожалуйста, предоставьте действующий почтовый индекс.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input " type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Согласие на обработку персональных данных
+              </label>
+              <div class="invalid-feedback">
+                Вы должны принять перед отправкой.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Отправить форму</button>
+          </div>
+        </form>
+        <!--  -->
       </div>
 
       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 sidebar-right">
@@ -158,6 +225,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="./js/validation.js"></script>
 
 </body>
 </html>
