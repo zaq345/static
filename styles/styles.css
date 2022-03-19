@@ -1,83 +1,209 @@
-.body{
-  max-width: 100%;
-  min-width: 320px;
+/* иконочный шрифт */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot');
+  src:  url('../fonts/icomoon/icomoon.eot?t93g7y#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?t93g7y') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?t93g7y') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?t93g7y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
-.header{
-  background-color:lightgreen;
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook1:before {
+  content: "\e900";
+}
+.icon-zavodik:before {
+  content: "\e901";
+  color: #fdbf0f;
+}
+.icon-dom:before {
+  content: "\e902";
+  color: #fdbf0f;
+}
+.icon-rub:before {
+  content: "\e903";
+  color: #651fff;
+}
+.icon-plane:before {
+  content: "\e904";
+  color: #651fff;
+}
+.icon-grafik:before {
+  content: "\e905";
+  color: #651fff;
+}
+.icon-calc:before {
+  content: "\e906";
+  color: #651fff;
+}
+.icon-phone:before {
+  content: "\e907";
+}
+.icon-arrow:before {
+  content: "\e908";
+}
+/* шрифты */
+@font-face {
+  font-family: 'Roboto';
+  src: local('../fonts/roboto/Roboto-Regular.ttf'),
+	   url('../fonts/roboto/Roboto-Regular.ttf') format('ttf'),
+}
+@font-face {
+  font-family: 'Roboto-Condensed';
+  src: local('../fonts/roboto-condensed/RobotoCondensed-Regular.ttf'),
+	   url('../fonts/roboto-condensed/RobotoCondensed-Regular.ttf') format('ttf'),
+}
+/* кнопка */
+.button-container{
   display: flex;
-  justify-content: center;
-  border: 1px solid black;
-  margin-top: 2.5rem;
-  min-height: 2rem;
+  /* justify-items: center; */
 }
-.main{
-  border: 1px solid black;
+.button{
+  height: 2rem;
+  width: 8.5rem;
+  background-color: black;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  /* margin-right: 30px; */
+  /* margin-right: 0; */
 }
-
-.sidebar-left{
-  background-color: cornflowerblue;
-  border: 1px solid black;
-  text-align: center;
-  /* min-width: 10rem; */
-  min-height: 2rem;
-  flex-grow: 1; 
-  
-}
-.content{
-  border: 1px solid black;
-  /* text-align: center; */
-  min-width: 10rem;
-  min-height: 2rem;
-  flex-grow: 3 !important; 
-}
-.card{
-  /* width: 5rem; */
-  margin: 5px;
-  border: 1px solid black;
+.button__after{
+  margin-left: -3px;
+  border: 20px solid transparent; 
+  border-left: 15px solid black;
+  border-radius: 6px;
 }
 
-.img-card{
-  width: 4rem;
-}
-
-.sidebar-right{
-  background-color:mediumpurple;
-  border: 1px solid black;
-  text-align: center;
-  /* min-width: 10rem; */
-  min-height: 2rem;
-  flex-grow: 1;
-}
-#carouselExampleControls{
-  max-height: 5rem;
-}
-.footer{
-  background-color: coral;
+/* полоска меню и лого */
+.menu{
+  width: 59rem;
+  margin: auto;
+  margin-top: 14px;
   display: flex;
-  justify-content: center;
-  border: 1px solid black;
-  margin-bottom: 2.5rem;
-  min-height: 2rem;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.menu__string{
+  width: 42rem;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__item{
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.menu__item:hover{
+  color: black;
 }
 
- 
-@media (max-width: 767px){
-  .card{
-    width: 128px;
-  }
-} 
-@media (max-width: 576px){
-  .card{
-    width: auto;
-  }
-  .sidebar-left{
-    min-width: 275px;
-  }
-  .content{
-    min-width: 275px;
-  }
-  .sidebar-right{
-    min-width: 275px;
-  }
-
+/* header */
+.container-header{
+  max-width: 96rem;
+  margin: 0 auto;
+  background-image: url(../img/header/fon.svg);
+  min-height: 36rem;
+}
+/* фоны */
+.header-background{
+  position: relative;
+}
+.header-background__bkg1{
+  /* position: relative; */
+  position: absolute;
+  left: 377px;
+  top: 234px;
+}
+.header-background__bkg2{
+  position: absolute;
+  left: 506px;
+  top: 170px;
+}
+/* адрес и телефон */
+.addres-phone{
+  margin-left: 38.5rem;
+  width: 38rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+}
+.addres-phone__addres{
+  display: flex;
+  align-items: center;
+}
+.phone{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.phone>a{
+  text-decoration: none;
+  color: black;
+}
+.phone>a:hover{
+  color: black;
+}
+.mail{
+  text-decoration: none;
+  color: black;
+}
+.mail:hover{
+  color: black;
+}
+/* текст */
+.button-container-text{
+  margin-top: 20px;
+}
+.header-text{
+  margin-left: 377px;
+  margin-top: 271px;
+}
+.button-text{
+  height: 3rem;
+  width: 13rem;
+  font-size: 24px;
+  z-index: 2;
+}
+.button-text__after{
+  margin-left: -2px;
+  border: 30px solid transparent; 
+  border-left: 20px solid black;
+  border-radius: 6px;
+}
+/* .button:hover{
+  color: #651fff;
+} */
+/* footer */
+.container-footer{
+  max-width: 96rem;
+  min-height: 16rem;
+  background-color: #F5F5F5;
+  margin: 0 auto;
 }
