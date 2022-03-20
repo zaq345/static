@@ -464,17 +464,17 @@
   left: 60px;
   top: 460px;
 }
-.button-container{
+.button-container-reasons{
   display: flex;
   margin-left: 50px;
   margin-top: 80px
 }
-.button{
+.button-reasons{
   height: 3rem;
   width: 16rem;
   font-size: 24px;
 }
-.button__after{
+.button-reasons__after{
   margin-left: -3px;
   border: 30px solid transparent; 
   border-left: 15px solid black;
@@ -829,6 +829,10 @@ select{
   border-radius: 6px;
   height: 60px;
 }
+
+/* input:focus{
+  color:  #7224EA;
+} */
 
 /* footer */
 .container-footer{
